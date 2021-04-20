@@ -15,6 +15,7 @@
   --red: crimson;
   --light-grey: rgba(198,201,216,.75);
   --grey: #4e4e4e;
+  --text-shadow-color: #1f1f1f;
 }
 
 body {
@@ -35,7 +36,7 @@ body {
 	text-transform: uppercase;
 	font-weight: 500;
 	letter-spacing: 0.2ch;
-	border: 2px solid #4e4e4e;
+	border: 2px solid var(--grey);
 	padding: 0.5rem 1rem;
 	border-radius: 50px;
 }
@@ -52,7 +53,7 @@ body {
 	text-transform: uppercase;
 	font-weight: 500;
 	letter-spacing: 0.2ch;
-	border: 2px solid #4e4e4e;
+	border: 2px solid var(--grey);
 	padding: 0.5rem 1rem;
 	border-radius: 50px;
 	background-color: var(--red);
@@ -128,12 +129,13 @@ nav {
     top: 0;
     height: 100vh;
     width: 100%;
-    max-width: 10rem;
+    max-width: 18rem;
 	padding: 1rem 0;
 }
 
 .menu-nav .menu-btn {
-	margin: auto;
+	margin-left: auto;
+    margin-right: 1rem;
 	display: block;
 }
 
@@ -204,7 +206,8 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	margin: auto;
-    width: 19rem;
+    width: 100%;
+    max-width: 19rem;
 }
 
 /* Speciality */
@@ -250,6 +253,7 @@ nav {
 	font-size: 2.5rem;
 	line-height: 1.5ch;
 	margin-bottom: 2rem;
+	text-shadow: 12px 12px var(--text-shadow-color);
 }
 
 .speciality-desc {
@@ -282,6 +286,7 @@ nav {
 	text-align: center;
 	font-size: 2.5rem;
 	letter-spacing: 0.03cm;
+	text-shadow: 12px 12px var(--text-shadow-color);
 }
 
 .section-info {
@@ -300,7 +305,7 @@ nav {
 }
 
 .service-card {
-	background-color: var(--black);
+	background-color: var(--secondary);
 	padding: 1rem 2rem;
 	color: white;
 	width: 23rem;
@@ -326,4 +331,46 @@ nav {
 .service-card-desc {
 	color: var(--light-grey);
 	margin-bottom: 1rem;
+}
+
+/* Pricing */
+
+#pricing {
+	background-color: var(--secondary);
+	padding: 7rem 0;
+}
+
+.pricing-card {
+	background-color: var(--primary);
+    padding: 1rem;
+    color: white;
+    text-align: center;
+	margin: 1rem;
+	max-width: 22rem;
+    width: 100%;
+	padding-bottom: 2rem;
+}
+
+.pricing-card-header {
+	font-size: 2rem;
+	margin: 1rem;
+}
+
+.pricing-card-subheader {
+	font-size: 1.5rem;
+}
+
+.pricing-card-pricing {
+	font-size: 2rem;
+	color: var(--red);
+}
+
+.pricing-card ul {
+	list-style-type: circle;
+	padding: 2rem;
+	text-align: start;
+}
+
+.pricing-card li {
+	margin: 0.5rem;
 }
