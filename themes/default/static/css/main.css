@@ -137,6 +137,15 @@ header {
   align-items: center;
 }
 
+.header-logo {
+  display: flex;
+}
+
+.header-logo img {
+  display: block;
+  margin-right: 1rem;
+}
+
 .header-right {
   display: flex;
 }
@@ -340,6 +349,7 @@ header {
   padding: 0;
   box-shadow: 0 0 10px 0 #cccccc;
   max-width: 60rem;
+  margin-top: 2rem;
 }
 
 .contact-details {
