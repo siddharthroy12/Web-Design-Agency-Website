@@ -469,7 +469,10 @@ header {
 }
 
 .contact-form label {
-  display: none;
+  display: block;
+  height: 0;
+  width: 0;
+  color: #6163ff;
 }
 
 @media screen and (max-width: 600px) {
