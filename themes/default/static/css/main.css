@@ -119,11 +119,11 @@ html {
   justify-content: center;
 }
 
-.v-box {
+.h-box {
   display: flex;
 }
 
-.h-box {
+.v-box {
   display: flex;
   flex-direction: column;
 }
@@ -449,17 +449,17 @@ header {
   font-size: 1.1rem;
 }
 
-.contact-form .v-box input[name="fullname"] {
+.form-field-wrapper:nth-child(1) {
   margin-right: 0.5rem;
 }
-.contact-form .v-box input[name="bussiness"] {
+.form-field-wrapper:nth-child(2)  {
   margin-left: 0.5rem;
 }
-.contact-form .h-box {
+.contact-form .v-box {
   margin-top: 1rem;
   flex-grow: 1;
 }
-.contact-form .h-box textarea {
+.contact-form .v-box textarea {
   margin-top: 1rem;
   height: 100%;
 }
@@ -472,7 +472,7 @@ header {
   display: block;
   height: 0;
   width: 0;
-  color: #6163ff;
+  color: rgba(0,0,0,0);
 }
 
 @media screen and (max-width: 600px) {
@@ -482,7 +482,7 @@ header {
   .contact-form button[type="submit"] {
     width: 100%;
   }
-  .contact-form .h-box textarea {
+  .contact-form .v-box textarea {
     height: 10rem;
   }
 }
